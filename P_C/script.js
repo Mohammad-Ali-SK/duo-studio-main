@@ -31,3 +31,53 @@ ScrollTrigger.refresh();
 
 };
 loco();
+
+const tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:`.page-1>h1`,
+        scroller:`#main`,
+        start:`top 3%`,
+        end:`bottom top`,
+        // markers:true,
+        scrub:3,
+    }
+});
+tl.to(".page-1>h1",{
+    x:-100,
+
+},'anim');
+tl.to(".page-1>h2",{
+    x:100,
+},'anim');
+tl.to('.video>video',{
+    width:'65%',
+},'anim');
+
+const tl1 = gsap.timeline({
+    scrollTrigger:{
+        trigger:`page-1>h1`,
+        scroller:`#main`,
+        start:`top -110%`,
+        end:`top -130%`,
+        scrub:1,
+        duration:1,
+        delay:1,
+        // stragger:true,
+    }
+});
+tl1.to('.page-2',{
+    backgroundColor:'#fff',
+    color:"black"
+});
+tl1.to(".page2-left>h2",{
+    color:'#000',
+
+})
+tl1.to(".page2-right>p",{
+    color:'#000',
+    
+});
+tl1.to(".page-2>h1",{
+    color:'#000',
+    
+})

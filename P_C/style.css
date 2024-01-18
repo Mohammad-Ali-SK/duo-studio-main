@@ -65,32 +65,95 @@ html,body{
     width: 100vw;
     min-height: 100vh;
     position: relative;
-    background-color:#0F0D0D;
+    background-color:#0f0d0d;
 }
-.page1-text{
-    padding-top: 25vh;
-}
-.page1-text>h1{
-    opacity: .9;
+
+.page-1>h1{
+    padding-top: 30vh;
+    opacity: .7;
     font-size: 8vw;
     font-family: ali-1;
     font-weight: 300;
-    padding-left: 6vw;
+    padding-left: 10vw;
 }
-.page1-text>h2{
+.page-1>h2{
     font-size: 8vw;
-    opacity: .9;
+    opacity: .7;
     font-family: ali-1;
     font-weight: 300;
-    padding-left: 20vw;
+    padding-left: 24vw;
+}
+.video{
+    padding-top: 5vh;
+    /* padding-bottom: 3vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .page-1>video{
-    width: 60%;
-    height: 20%;
+    
+    /* position: absolute; */
+    width: 50%;
+    height: 30%;
+   
 }
 .page-2{
     width: 100vw;
-    height: 100vh;
+    min-height: 135vh;
+    padding-top: 15vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    background-color: #0f0d0d;
+    
     position: relative;
-    background-color: #fff;
+}
+.page-2>h1{
+    color: #fff;
+    font-size: 7vw;
+    font-family: ali-1;
+
+}
+.page2-container{
+    position: relative;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: space-between;
+    
+    /* background-color: red; */
+    width: 100%;
+    height: 65vh;
+}
+.page2-left>h2{
+    /* background-color: beige; */
+    /* color: #fff; */
+    width: 30%;
+    font-size: 3.5vw;
+    font-family: ali-1;
+}
+.page2-right>p{
+    /* background-color: aqua; */
+    font-size: 1.6vw;
+    width: 24%;
+    line-height: 1.5;
+    padding: 0px 4px;
+    right: 5%;
+    position: absolute;
+    /* color: #0f0d0d; */
+    font-family: ali-1;
+}
+.page2-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page-2>button{
+    margin-top: 1vw;
+    padding: 15px 40px;
+    background-color: #0f0d0d;
+    border: none;
+    border-radius: 50px;
+    font-family: ali-1;
+    font-size: 1vw;
+    position: absolute;
+    right: 20%;
 }
